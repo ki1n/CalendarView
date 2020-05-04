@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPril"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/chooseStartDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        android:textColor="@color/colorTxt"
+        android:background="@color/colorBt"
+        android:gravity="left|center_vertical"
+        android:text="@string/text_start_data" />
+
+    <Button
+        android:id="@+id/chooseEndDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        android:textColor="@color/colorTxt"
+        android:background="@color/colorBt"
+        android:gravity="left|center_vertical"
+        android:text="@string/text_data" />
+
+    <CalendarView
+        android:id="@+id/startDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp" />
+
+    <CalendarView
+        android:id="@+id/endtDateCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        android:background="@color/colCalendar" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:textColor="@color/colorTxt"
+        android:background="@color/colorBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="3sp"
+        android:text="@string/text_OK" />
+</LinearLayout>
